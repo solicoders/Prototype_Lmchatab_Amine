@@ -1,3 +1,7 @@
+---
+layout : default
+---
+
 # base-de-données
 
 

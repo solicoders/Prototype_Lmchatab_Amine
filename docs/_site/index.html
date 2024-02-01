@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="en-US">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <title> Rapport </title>
+
+    </head>
+    <body>
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="book">
+                <article size="A4">
+                    <!--
+- [back-end.md](//back-end.html)
+
+- [base-de-données.md](//base-de-donn%C3%A9es.html)
+
+- [creation-app.md](//creation-app.html)
+
+- [front-end.md](//front-end.html)
+
+- [/feed.xml](//feed.xml)
+
+- [jeux-test.md](//jeux-test.html)
+
+- [rapport.md](//rapport.html)
+
+- [unit-test.md](//unit-test.html)
+
+- [index.md](//)
+   -->
+
+<h1 id="back-end">back-end</h1>
+
+<h2 id="commande-utilisées">Commande utilisées</h2>
+
+<ul>
+  <li>run migration</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    php artisan migration
+</code></pre></div></div>
+
+<ul>
+  <li>run seeders</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    php artisan db:seed
+</code></pre></div></div>
+
+<h1 id="base-de-données">base-de-données</h1>
+
+<h2 id="mld">MLD</h2>
+
+<ul>
+  <li>page(id, page_key, page_title, reference, Date de création, Date de modification)</li>
+  <li>comment(id, comment, reference, Date de création, Date de modification, page_id)</li>
+</ul>
+
+<h2 id="commande-utilisées-1">Commande utilisées</h2>
+
+<ul>
+  <li>create table Comment &amp; page</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    php artisan make:migration create_comment_table
+    php artisan make:migration create_page_table
+</code></pre></div></div>
+
+<h1 id="creation-app">creation-app</h1>
+
+<h1 id="commande-utilisées-2">commande utilisées</h1>
+
+<ul>
+  <li>install laravel app</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    composer create-project laravel/laravel example-app
+</code></pre></div></div>
+
+<ul>
+  <li>install admin-lte via npm</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    npm <span class="nb">install </span>admin-lte@^3.2 <span class="nt">--save</span>
+</code></pre></div></div>
+
+<ul>
+  <li>create model Comment &amp; Page</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    php artisan make:model Comment/Comment
+    php artisan make:model Page/Page
+</code></pre></div></div>
+
+<h1 id="front-end">front-end</h1>
+
+<h2 id="commande-utilisées-3">commande utilisées</h2>
+
+<ul>
+  <li>create Comment controller</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    php artisan make:controller Comment/CommentController
+</code></pre></div></div>
+
+<h1 id="jeux-test">jeux-test</h1>
+
+<h2 id="commande-utilisées-4">Commande utilisées</h2>
+
+<ul>
+  <li>create Seeding Comment &amp; Page</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    php artisan make:seeder Comment/CommentSeeder
+    php artisan make:seeder Page/PageSeeder
+</code></pre></div></div>
+
+<h1 id="unit-test">unit-test</h1>
+
+<h2 id="commande-utilisées-5">Commande utilisées</h2>
+
+<ul>
+  <li>create test</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    php artisan make:test Comment/CommentRepositoryTest
+</code></pre></div></div>
+
+<ul>
+  <li>run test</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    php artisan <span class="nb">test</span>
+</code></pre></div></div>
+
+<h1 id="rapport">rapport</h1>
+
+<h2 id="commande-utilisées-6">commande utilisées</h2>
+
+
+                </article>
+            </div>
+        </div>
+    </body>
+</html>
