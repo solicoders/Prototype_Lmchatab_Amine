@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\Comment;
 
 use Tests\TestCase;
 use App\Models\Page\Page;
