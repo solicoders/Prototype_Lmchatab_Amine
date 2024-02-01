@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use App\Repositories\BaseRepository;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\Comment\CommentRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -12,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        // $this->app->bind(BaseRepository::class, CommentRepository::class);
+        $this->app->bind(BaseRepository::class, CommentRepository::class);
     }
 
     /**
