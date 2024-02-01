@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Comment\CommentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::redirect('/', '/comment');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::resource('comment', CommentController::class);
+
+
+

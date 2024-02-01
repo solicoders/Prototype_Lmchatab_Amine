@@ -14,8 +14,6 @@ abstract class BaseRepository
     }
 
 
-
-
     public function index(array $query = [])
     {
         $queryBuilder = $this->model->query();
