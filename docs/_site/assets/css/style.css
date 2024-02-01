@@ -3,6 +3,15 @@ body {
   font: 12pt "Tahoma";
 }
 
+h1{
+  font-size: 20pt;
+}
+
+
+h2{
+  font-size: 15pt;
+}
+
 article[size="A4"] {
   display: block;
   width: 21cm;
