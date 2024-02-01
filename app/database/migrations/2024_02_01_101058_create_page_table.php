@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('page', function (Blueprint $table) {
             $table->id();
+            $table->string('page_key');
+            $table->string('page_title');
+            $table->string('reference');
             $table->timestamps();
         });
     }

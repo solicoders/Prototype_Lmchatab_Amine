@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('comment', function (Blueprint $table) {
             $table->id();
+            $table->text('comment');
+            $table->string('reference');
             $table->timestamps();
+            $table->foreignId('page_id')->constrained('pages');
+            // $table->foreign('project_id')->references('id')->on('pages')->onDelete('cascade');
         });
     }
 

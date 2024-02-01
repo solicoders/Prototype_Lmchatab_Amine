@@ -1,3 +1,5 @@
+# creation-app
+
 
 # commande utilisées
 
@@ -22,18 +24,9 @@
 ```
 
 
-- create table Comment & page
+- create controller Comment
 
 ```shell
-    php artisan make:migration create_comment_table
-    php artisan make:migration create_page_table
+    php artisan make:controller Comment/CommentController
 ```
 
-
-
-- create Seeding Comment & Page
-
-```shell
-    php artisan make:seeder Comment/CommentSeeder
-    php artisan make:seeder Page/PageSeeder
-```
