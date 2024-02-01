@@ -7,7 +7,7 @@
 - create test 
 
 ```shell
-    php artisan make:test CommentRepositoryTest
+    php artisan make:test Comment/CommentRepositoryTest
 ```
 
 - run test 
