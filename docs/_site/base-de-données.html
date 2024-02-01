@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="en-US">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <title> Rapport </title>
+
+    </head>
+    <body>
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="book">
+                <article size="A4">
+                    <h1 id="base-de-données">base-de-données</h1>
+
+<h2 id="mld">MLD</h2>
+
+<ul>
+  <li>page(id, page_key, page_title, reference, Date de création, Date de modification)</li>
+  <li>comment(id, comment, reference, Date de création, Date de modification, page_id)</li>
+</ul>
+
+<h2 id="commande-utilisées">Commande utilisées</h2>
+
+<ul>
+  <li>create table Comment &amp; page</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    php artisan make:migration create_comment_table
+    php artisan make:migration create_page_table
+</code></pre></div></div>
+
+
+                </article>
+            </div>
+        </div>
+    </body>
+</html>
