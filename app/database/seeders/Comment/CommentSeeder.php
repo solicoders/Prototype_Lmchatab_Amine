@@ -28,6 +28,6 @@ class CommentSeeder extends Seeder
                 'page_id' => $page->id,
             ];
         }
-        DB::table('comment')->insert($comments);
+        DB::table('comments')->insert($comments);
     }
 }

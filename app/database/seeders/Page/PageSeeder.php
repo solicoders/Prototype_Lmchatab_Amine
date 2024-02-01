@@ -32,6 +32,6 @@ class PageSeeder extends Seeder
             ],
         ];
 
-        DB::table('page')->insert($pages);
+        DB::table('pages')->insert($pages);
     }
 }

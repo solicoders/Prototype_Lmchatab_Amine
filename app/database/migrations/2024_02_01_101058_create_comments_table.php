@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('comment', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->text('comment');
             $table->string('reference');
             $table->timestamps();
-            $table->foreignId('page_id')->constrained('page');
-            // $table->foreign('project_id')->references('id')->on('pages')->onDelete('cascade');
+            $table->foreignId('page_id')->constrained('pages');
+            // $table->foreign('page_id')->references('id')->on('pages')->onDelete('cascade');
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('comment');
+        Schema::dropIfExists('comments');
     }
 };
