@@ -24,9 +24,4 @@
 ```
 
 
-- create controller Comment
-
-```shell
-    php artisan make:controller Comment/CommentController
-```
 

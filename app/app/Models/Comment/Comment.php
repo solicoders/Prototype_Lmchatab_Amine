@@ -19,7 +19,7 @@ class Comment extends Model
     ];
 
 
-    public function project()
+    public function page()
     {
         return $this->belongsTo(Page::class);
     }

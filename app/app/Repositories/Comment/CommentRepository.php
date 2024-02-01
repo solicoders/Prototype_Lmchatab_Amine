@@ -15,6 +15,18 @@ class CommentRepository extends BaseRepository
     }
 
 
+    function pageComments(){
+        return $this->model->with('page')->paginate(3);
+    }
+
+
+    public function store(array $data){
+        if(isset($data)){
+            $data["reference"] = 'reference 213';
+        }
+        parent::store($data);
+    }
+
 
 
 }
