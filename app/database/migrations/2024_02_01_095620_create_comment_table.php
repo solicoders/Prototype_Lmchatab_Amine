@@ -16,7 +16,7 @@ return new class extends Migration
             $table->text('comment');
             $table->string('reference');
             $table->timestamps();
-            $table->foreignId('page_id')->constrained('pages');
+            $table->foreignId('page_id')->constrained('page');
             // $table->foreign('project_id')->references('id')->on('pages')->onDelete('cascade');
         });
     }

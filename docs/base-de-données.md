@@ -26,3 +26,8 @@
     php artisan make:seeder Page/PageSeeder
 ```
 
+- run migration
+
+```shell
+    php artisan migrate
+```
